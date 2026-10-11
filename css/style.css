@@ -1,0 +1,554 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+/* --------------------common css pate st */
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* Image */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* variabal */
+--root{
+   --my_font:"Cormorant Garamond", serif;
+}
+
+/* Link */
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* List */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Button */
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+/* Input */
+input,
+textarea,
+select {
+    font-family: inherit;
+    outline: none;
+}
+
+/* --------------------common css pate end */
+/* -==============================Topbar pate st */
+
+#TopBar {
+    padding: 8px 20px;
+    background: #1f2a22;
+
+}
+.Mune_top{
+    display: flex;
+    align-items: center;
+}
+
+.Holine {
+    width: fit-content;
+    color: white !important;
+    border: 1px solid #3a443d;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+.Holine a {
+    color: white !important;
+}
+
+/* Rotating Light */
+.Holine::before {
+    content: "";
+    position: absolute;
+    inset: -50%;
+    background: conic-gradient(
+        from 0deg,
+        transparent 0deg 300deg,
+        #ffffff 340deg,
+        transparent 360deg
+    );
+
+    animation: rotateBorder 8s linear infinite;
+    z-index: -2;
+    pointer-events: none;
+}
+
+/* Cover the Center */
+.Holine::after {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: #111a14;
+    border-radius: 7px;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes rotateBorder {
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+/* -------------style Eft */
+
+
+.style_eft {
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    font-weight: normal;
+    font-family: var(--my_font);
+}
+
+.style_eft_track {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: max-content;
+    animation: scrollText 20s linear infinite;
+}
+
+.style_eft_track span {
+    flex-shrink: 0;
+}
+
+/* Right to left continuous animation */
+@keyframes scrollText {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* -==============================navbar pate st */
+#Navbar{
+    background: #f3f5f1;
+}
+
+
+
+.useDiv{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   
+}
+.useDiv a{
+     color: #000000 !important;
+}
+
+
+.NavbLogo{
+    color: #484a46;
+}
+.NavbLogo:hover{
+    color: #484a46;
+}
+
+.Navbar_ul li a{
+    color: black !important;
+    cursor: pointer;
+     text-transform: uppercase;
+     font-family: var(--my_font);
+}
+
+/* animation----------------- */
+
+
+/* Navbar */
+#Navbar {
+    background: #f3f5f1;
+    position: relative;
+    z-index: 1030;
+}
+
+#mainNav {
+    background: #f3f5f1;
+    width: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Scroll করলে Navbar Fixed হবে */
+#Navbar.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    animation: navbarSlideDown 0.45s ease both;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.09);
+}
+
+/* Smooth Animation */
+@keyframes navbarSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Menu Icon */
+.navbar-toggler {
+    border: none;
+    box-shadow: none !important;
+}
+
+.navbar-toggler i {
+    font-size: 22px;
+    color: #484a46;
+}
+
+
+/* -==============================navbar pate end */
+
+
+/* -==============================HeroImg pate st */
+#Hero{
+    margin-bottom: 130px;
+}
+.HeroImg{
+    width: 302px;
+    height: 377px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.muneHero{
+    display: flex;
+    gap: 2px;
+}
+.HeroImg img{
+    width: 100%;
+}
+.heroShop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 377px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+.heroShop a{
+    color: white;
+    padding: 3px 10px;
+   background: rgba(149, 123, 96, 0.5);
+   border: #a8b99a solid 1px;
+   border-radius: 4px;
+
+}
+
+
+/* -==============================HeroImg pate end */
+
+/* -==============================Item pate st */
+#Item{
+    margin-top: 70px;
+}
+.item_ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.item_ul li button {
+    border: none;
+    background: transparent;
+    color: #333;
+    padding: 5px 8px;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #2e5b3f;
+
+}
+
+/* Active Button */
+.item_ul li button.active {
+    background: #000;
+    color: #fff;
+}/* =========================
+   ITEM SECTION
+========================= */
+
+#Item {
+    margin-top: 70px;
+}
+
+/* Category Buttons */
+.item_ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+.item_ul li button {
+    border: 1px solid #2e5b3f;
+    background: transparent;
+    color: #333;
+    padding: 7px 15px;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.item_ul li button:hover {
+    background: #2e5b3f;
+    color: #fff;
+}
+
+/* Active Button */
+.item_ul li button.active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+/* =========================
+   PRODUCT LAYOUT
+========================= */
+
+.allPocuct {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Hide Inactive Categories */
+.category-content[hidden] {
+    display: none !important;
+}
+
+/* Product Card */
+.AllPocuctCrad {
+    width: 100%;
+    max-width: 365px;
+    text-align: center;
+}
+
+/* Product Image */
+.pocutImg {
+    width: 100%;
+    height: 476px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: zoom-in;
+}
+
+.pocutImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.pocutImg:hover img {
+    transform: scale(1.15);
+}
+
+/* Product Title */
+.textp {
+    font-size: 15px;
+    margin-top: 12px;
+}
+
+/* =========================
+   LOAD MORE
+========================= */
+
+.stitbutto {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stitbutto .Load {
+    padding: 10px 22px;
+    border: 1px solid #2e5b3f;
+    border-radius: 7px;
+    background: #2e5b3f;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.stitbutto .Load:hover {
+    background: #234630;
+}
+
+/* Hide Products Until Load More */
+.AllPocuctCrad.hide-product {
+    display: none;
+}
+/* --------------------------button sirit------------------------ */
+
+
+/* Product Grid */
+.allPocuct {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Product Card */
+.AllPocuctCrad {
+    min-width: 0;
+}
+
+/* Hidden Products */
+.AllPocuctCrad.hide-product {
+    display: none;
+}
+
+/* Load More Button */
+.buttonsirt {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 4px ;
+}
+
+.buttonsirt button {
+    padding: 12px 30px;
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttonsirt button:hover {
+    background: #444;
+}
+
+
+/* -----------------------------panjabi------------------------------------------------- */
+/* ----------------button  */
+
+/* -==============================Item pate end */
+/* -==============================signecsr pate st */
+#signecsr{
+    margin: 100px;
+}
+.signecsrMune{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.signecsr{
+    width: fit-content;
+    width: 384px;
+    height: 481px;
+    border-radius:10px ;
+    overflow: hidden;
+}
+
+/* -==============================signecsr pate end */
+
+/* -==============================footer pate st */
+/* -==============================footer comontext */
+.common_text{
+    font-size: 19px;
+    color: #222222;
+}
+
+
+footer{
+    background: #e7ebe2;
+    padding-top: 80px;
+    bottom: 10px;
+}
+.logoFooter{
+    text-align: center;
+    font-size: 80px;
+}
+.logoFooter a{
+   font-size: 80px;
+}
+.footer_row{
+    margin-top: 40px;
+    display: flex;
+justify-content: space-around;
+    gap: 50px;
+}
+.textandsosar h6{
+font-size: 14px !important;
+width: 192px;
+}
+.sosal_row{
+    display: flex;
+    gap: 10px;
+}
+.sosal{
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    background: #000;
+}
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -==============================footerem pate end */
