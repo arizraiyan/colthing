@@ -537,8 +537,21 @@ width: 192px;
     border-radius: 7px;
     background: #000;
 }
-.
-
+footer .lest_h2{
+width: 256px;
+  
+}
+footer h3{
+    font-size: 20px;
+    font-weight: normal;
+    color: #222;
+    margin-top: 10px;
+    align-items: start;
+}
+.footer_ul{
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
 
 
 
