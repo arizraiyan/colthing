@@ -14,6 +14,7 @@
 html {
     scroll-behavior: smooth;
 }
+
 /* Image */
 img {
     max-width: 100%;
@@ -21,8 +22,8 @@ img {
 }
 
 /* variabal */
---root{
-   --my_font:"Cormorant Garamond", serif;
+--root {
+    --my_font: "Cormorant Garamond", serif;
 }
 
 /* Link */
@@ -60,7 +61,8 @@ select {
     background: #1f2a22;
 
 }
-.Mune_top{
+
+.Mune_top {
     display: flex;
     align-items: center;
 }
@@ -80,6 +82,7 @@ select {
     isolation: isolate;
     overflow: hidden;
 }
+
 .Holine a {
     color: white !important;
 }
@@ -89,12 +92,10 @@ select {
     content: "";
     position: absolute;
     inset: -50%;
-    background: conic-gradient(
-        from 0deg,
-        transparent 0deg 300deg,
-        #ffffff 340deg,
-        transparent 360deg
-    );
+    background: conic-gradient(from 0deg,
+            transparent 0deg 300deg,
+            #ffffff 340deg,
+            transparent 360deg);
 
     animation: rotateBorder 8s linear infinite;
     z-index: -2;
@@ -116,7 +117,7 @@ select {
     100% {
         transform: rotate(360deg);
     }
-    
+
 }
 
 /* -------------style Eft */
@@ -155,35 +156,37 @@ select {
 }
 
 /* -==============================navbar pate st */
-#Navbar{
+#Navbar {
     background: #f3f5f1;
 }
 
 
 
-.useDiv{
+.useDiv {
     display: flex;
     align-items: center;
     gap: 15px;
-   
+
 }
-.useDiv a{
-     color: #000000 !important;
+
+.useDiv a {
+    color: #000000 !important;
 }
 
 
-.NavbLogo{
+.NavbLogo {
     color: #484a46;
 }
-.NavbLogo:hover{
+
+.NavbLogo:hover {
     color: #484a46;
 }
 
-.Navbar_ul li a{
+.Navbar_ul li a {
     color: black !important;
     cursor: pointer;
-     text-transform: uppercase;
-     font-family: var(--my_font);
+    text-transform: uppercase;
+    font-family: var(--my_font);
 }
 
 /* animation----------------- */
@@ -242,24 +245,28 @@ select {
 
 
 /* -==============================HeroImg pate st */
-#Hero{
+#Hero {
     margin-bottom: 130px;
 }
-.HeroImg{
+
+.HeroImg {
     width: 302px;
     height: 377px;
     overflow: hidden;
     border-radius: 10px;
     position: relative;
 }
-.muneHero{
+
+.muneHero {
     display: flex;
     gap: 2px;
 }
-.HeroImg img{
+
+.HeroImg img {
     width: 100%;
 }
-.heroShop{
+
+.heroShop {
     position: absolute;
     top: 0;
     left: 0;
@@ -268,15 +275,16 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-    
+
+
 }
-.heroShop a{
+
+.heroShop a {
     color: white;
     padding: 3px 10px;
-   background: rgba(149, 123, 96, 0.5);
-   border: #a8b99a solid 1px;
-   border-radius: 4px;
+    background: rgba(149, 123, 96, 0.5);
+    border: #a8b99a solid 1px;
+    border-radius: 4px;
 
 }
 
@@ -284,15 +292,17 @@ select {
 /* -==============================HeroImg pate end */
 
 /* -==============================Item pate st */
-#Item{
+#Item {
     margin-top: 70px;
 }
-.item_ul{
+
+.item_ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
+
 .item_ul li button {
     border: none;
     background: transparent;
@@ -309,7 +319,9 @@ select {
 .item_ul li button.active {
     background: #000;
     color: #fff;
-}/* =========================
+}
+
+/* =========================
    ITEM SECTION
 ========================= */
 
@@ -432,6 +444,32 @@ select {
 .AllPocuctCrad.hide-product {
     display: none;
 }
+.buttonsirt a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #234630;
+    color: #f5deb3;
+    border: 1px solid #365c43;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttonsirt a:hover {
+    background: #315c40;
+    color: #fff;
+    border-color: #4a795a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(35, 70, 48, 0.25);
+}
+
+.buttonsirt a:active {
+    transform: scale(0.96);
+}
 /* --------------------------button sirit------------------------ */
 
 
@@ -456,7 +494,7 @@ select {
 .buttonsirt {
     grid-column: 1 / -1;
     text-align: center;
-    margin: 4px ;
+    margin: 4px;
 }
 
 .buttonsirt button {
@@ -479,19 +517,21 @@ select {
 
 /* -==============================Item pate end */
 /* -==============================signecsr pate st */
-#signecsr{
+#signecsr {
     margin: 100px;
 }
-.signecsrMune{
+
+.signecsrMune {
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.signecsr{
+
+.signecsr {
     width: fit-content;
     width: 384px;
     height: 481px;
-    border-radius:10px ;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -499,56 +539,65 @@ select {
 
 /* -==============================footer pate st */
 /* -==============================footer comontext */
-.common_text{
+.common_text {
     font-size: 19px;
     color: #222222;
 }
 
 
-footer{
+footer {
     background: #e7ebe2;
     padding-top: 80px;
     bottom: 10px;
 }
-.logoFooter{
+
+.logoFooter {
     text-align: center;
     font-size: 80px;
 }
-.logoFooter a{
-   font-size: 80px;
+
+.logoFooter a {
+    font-size: 80px;
 }
-.footer_row{
+
+.footer_row {
     margin-top: 40px;
     display: flex;
-justify-content: space-around;
+    justify-content: space-around;
     gap: 50px;
 }
-.textandsosar h6{
-font-size: 14px !important;
-width: 192px;
+
+.textandsosar h6 {
+    font-size: 14px !important;
+    width: 192px;
 }
-.sosal_row{
+
+.sosal_row {
     display: flex;
     gap: 10px;
 }
-.sosal{
+
+.sosal {
     width: 40px;
     height: 40px;
     border-radius: 7px;
     background: #000;
 }
-footer .lest_h2{
-width: 256px;
-  
+
+footer .lest_h2 {
+    width: 256px;
+
 }
-footer h3{
+
+footer h3 {
     font-size: 20px;
     font-weight: normal;
     color: #222;
     margin-top: 10px;
     align-items: start;
 }
-.footer_ul{
+
+.footer_ul {
     margin-bottom: 0 !important;
     padding-left: 0 !important;
 }
@@ -565,3 +614,123 @@ footer h3{
 
 
 /* -==============================footerem pate end */
+
+
+/* ---------------------------------shirts all here pata st======================================= */
+#allSirts {
+    padding: 100px 0;
+}
+
+.allsirts_row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.singerAllsirts {
+    width: 400px;
+    position: relative;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+    transition: all 0.3s ease;
+     
+
+}
+
+.singerAllsirts:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+    transform: translateY(-5px);
+}
+
+.favarad {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #eeeeee;
+    color: #555;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    transition: all 0.3s ease;
+}
+
+.favarad:hover {
+    background: #ff4757;
+    color: #fff;
+    border-color: #ff4757;
+    transform: scale(1.1);
+    box-shadow: 0 6px 16px rgba(255, 71, 87, 0.30);
+}
+
+.singfist_row h2 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    width: 80%;
+    color: #222;
+    margin: 0 auto 12px;
+    text-align: center;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.order {
+    width: 400px;
+    height: 600px;
+    background: rgba(218, 207, 207, 0.25);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+    transition: top 0.4s ease;
+}
+
+.singerAllsirts:hover .order {
+    top: 80%;
+}
+
+.order button {
+    width: 100%;
+    height: 50px;
+    background: #111;
+    border: none;
+    border-radius: 10px;
+    color: wheat;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Hover Effect */
+.order button:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+/* Click Effect */
+.order button:active {
+    transform: scale(0.96);
+    background: #555;
+}
+/* ---------------------------------shirts all here pata st======================================= */
