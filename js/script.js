@@ -12,6 +12,8 @@ window.addEventListener("scroll", function () {
         navbarSection.classList.remove("navbar-fixed");
     }
 });
+
+// -----------------------------------------------hero section-===== pate           st===============================================================
 // -------------silk silder
 $('.muneHero').slick({
   dots: false,
@@ -45,11 +47,22 @@ $('.muneHero').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
+
   ]
 });
+
+const handercilck1=()=>{
+    console.log('click hoece')
+}
+
+
+
+
+
+
+
+
+// =========================================hero section pate end==============================================------------------
 
 // -------------------------item butoon ----------
 

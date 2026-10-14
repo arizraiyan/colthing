@@ -245,8 +245,10 @@ select {
 
 
 /* -==============================HeroImg pate st */
+
 #Hero {
     margin-bottom: 130px;
+    margin-top: 100px;
 }
 
 .HeroImg {
@@ -275,11 +277,9 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 
-.heroShop a {
+.heroShop span {
     color: white;
     padding: 3px 10px;
     background: rgba(149, 123, 96, 0.5);
@@ -288,7 +288,7 @@ select {
 
 }
 
-
+/* ---------------------------------hero ---------------------------------ditail pate---------------- */
 /* -==============================HeroImg pate end */
 
 /* -==============================Item pate st */
@@ -313,6 +313,10 @@ select {
     transition: 0.3s;
     border: 1px solid #2e5b3f;
 
+}
+.slick-list {
+ 
+    margin-left: 104px;
 }
 
 /* Active Button */
@@ -444,6 +448,7 @@ select {
 .AllPocuctCrad.hide-product {
     display: none;
 }
+
 .buttonsirt a {
     display: inline-block;
     padding: 10px 20px;
@@ -470,6 +475,7 @@ select {
 .buttonsirt a:active {
     transform: scale(0.96);
 }
+
 /* --------------------------button sirit------------------------ */
 
 
@@ -637,7 +643,7 @@ footer h3 {
     background: #fff;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
     transition: all 0.3s ease;
-     
+
 
 }
 
@@ -733,4 +739,5 @@ footer h3 {
     transform: scale(0.96);
     background: #555;
 }
+
 /* ---------------------------------shirts all here pata st======================================= */
