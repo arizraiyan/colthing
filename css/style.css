@@ -602,7 +602,29 @@ select {
 
 /* -----------------------------panjabi------------------------------------------------- */
 /* ----------------button  */
+/*                                                     ---------------------------------all_section_row-------------------------------------------- */
+#all_section{
+    margin-top: 30px;
+} 
+.all_section_row{
+    display: flex;
+    gap: 10px;
+}
+.Img_div_section{
+border-radius: 10px;
+width: 374px;
+height: 550px;
+border: 1px solid black;
+overflow: hidden;
+}
 
+
+
+
+
+
+
+/* ------------------end ----------------------------------------------all_section_row   end */
 /* -==============================Item pate end */
 /* -==============================signecsr pate st */
 #signecsr {
